@@ -5,7 +5,7 @@
             <div class="login-section__items">            
                 <input type="text" id="username" v-model="username" placeholder="Tên đăng nhập" class="item__username">
                 <input type="password" v-model="password" placeholder="Mật khẩu" class="item__password" id="password">
-                <button type="submit" class="item__submit-btn"  :disabled="isDisable" >Đăng nhập</button>
+                <button type="submit" class="item__submit-btn"  :disabled="isDisable" :style="{ cursor: pointer, background: colorBtn}">Đăng nhập</button>
                 <p v-if="error" class="item__error"> {{ error }}</p>
                 <div class="item__resetpwd">
                     <p>
@@ -18,7 +18,7 @@
                 <div class="item__signup">
                     <p>
                         <label for="signup">Bạn mới biết đến Buyit?</label>
-                        <router-link class="item__link" id="signup"> Đăng ký</router-link>
+                        <router-link to="/" class="item__link" id="signup"> Đăng ký</router-link>
                     </p>
                 </div>
             </div>
@@ -27,15 +27,19 @@
 </template>
 
 <script setup>
-    import { ref, watch } from 'vue';
+    import {ref, watch} from 'vue';
     const username = ref('');
     const password = ref('');
     const error = ref('');
-    const isDisable = ref(true);
+    var isDisable = ref(true);
+    var pointer = ref('not-allowed');
+    var colorBtn = ref('var(--disable-brand-color)');
+
 
     const handleLogin = async () => {
         error.value = '';
         try {
+            //example login logic
             if (username.value == 'user' && password.value == 'password') {
                 alert('login successful!');
             } else {
@@ -47,19 +51,22 @@
     }
 
     function toggleButton() {
-        if (username.value != '' && password.value != '')
+        if (username.value != '' && password.value != '') {
             isDisable = false;
-    }
-
-    function showText() {
-        if (username.value != '')
-            console.log(username.value);
+            pointer = 'pointer';
+            colorBtn = 'var(--brand-color)';
+        }
+        else {
+            isDisable = true;
+            pointer = 'not-allowed';
+            colorBtn = 'var(--disable-brand-color)';
+        }
     }
 
     watch([username, password], () => {
         toggleButton();
-        showText();
     })
+
 </script>
 
 <style scoped>
@@ -77,7 +84,13 @@
     .item__link {
         text-decoration: none;
     }
+    .item__submit-btn {
+        outline: none;
+        border: none;
+        background-color: var(--brand-color);
+        color: var(--vt-c-white);
+    }
     #signup {
-        color: rgb(218, 28, 92);
+        color: var(--brand-color);
     }
 </style>

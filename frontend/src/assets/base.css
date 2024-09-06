@@ -19,10 +19,12 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
 
-/* semantic color variables for this project */
-:root {
+  --brand-color: rgb(218, 28, 92);
+  --disable-brand-color: rgba(218, 28, 92, 0.8);
+  --hover-brand-color: rgba(218, 28, 92, 0.9);
+
+  /* semantic color variables for this project */
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -35,6 +37,7 @@
 
   --section-gap: 160px;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -56,6 +59,8 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+  font-size: 0.625rem;
+  line-height: 0.625rem;
 }
 
 body {
@@ -65,7 +70,7 @@ body {
   transition:
     color 0.5s,
     background-color 0.5s;
-  line-height: 1.6;
+  line-height: 1.6rem;
   font-family:
     Inter,
     -apple-system,
@@ -79,7 +84,7 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
+  font-size: 1.6rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
