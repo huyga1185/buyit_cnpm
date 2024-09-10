@@ -52,14 +52,14 @@
 
     function toggleButton() {
         if (username.value != '' && password.value != '') {
-            isDisable = false;
-            pointer = 'pointer';
-            colorBtn = 'var(--brand-color)';
+            isDisable.value = false;
+            pointer.value = 'pointer';
+            colorBtn.value = 'var(--brand-color)';
         }
         else {
-            isDisable = true;
-            pointer = 'not-allowed';
-            colorBtn = 'var(--disable-brand-color)';
+            isDisable.value = true;
+            pointer.value = 'not-allowed';
+            colorBtn.value = 'var(--disable-brand-color)';
         }
     }
 

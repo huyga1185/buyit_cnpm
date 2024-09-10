@@ -19,6 +19,7 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-dark-3: rgba(235, 235, 235, 0.9);
 
   --brand-color: rgb(218, 28, 92);
   --disable-brand-color: rgba(218, 28, 92, 0.8);
@@ -88,4 +89,23 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* self-define grid options */
+.col-1-5 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+.col-2-3 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+/* animations */
+@keyframes popUpScale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
