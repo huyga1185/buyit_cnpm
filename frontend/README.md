@@ -33,3 +33,27 @@ npm run build
 ```sh
 npm run lint
 ```
+
+Đề tài xây dựng dự án website thương mại điện tử(E-Commerce) dựa trên mẫu template frontend là shopee gồm các tính năng:
+1. Kênh người bán
+    + Tạo tài khoản
+    + Đặt lại mật khẩu
+    + Đăng sản phẩm
+    + Quản lý số lượng
+    + Quản lý đơn đặt hàng
+2. Phía người mua
+    + Tạo tài khoản
+    + Đặt lại mật khẩu
+    + Thêm giỏ hàng
+    + Quản lý giỏ hàng
+3. Đối với khách vãn lai
+    + Xem sản phẩm
+    + Tìm kiếm sản phẩm
+
+Các công nghệ sử dụng trong dự án:
+1. Frontend:
+    - Framework: Vue.js
+2. Backend:
+    - Framework: Flask
+Các ngôn ngữ chính:
++ Javascript, Python
