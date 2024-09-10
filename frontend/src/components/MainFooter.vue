@@ -106,6 +106,7 @@
         background-color: var(--vt-c-text-dark-2);
         padding-bottom: 50px;
         padding-top: 50px;
+        min-height: 100vh;
     }
     .payment-img,
     .shipping-unit-img {
