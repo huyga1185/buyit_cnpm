@@ -20,6 +20,8 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
   --vt-c-text-dark-3: rgba(235, 235, 235, 0.9);
+  --vt-c-text-link-1: rgb(32, 101, 171);
+
 
   --brand-color: rgb(218, 28, 92);
   --disable-brand-color: rgba(218, 28, 92, 0.8);

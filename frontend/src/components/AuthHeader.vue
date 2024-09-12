@@ -1,5 +1,10 @@
 <script setup>
-
+    defineProps({
+        "title": {
+            type: String,
+            required: true
+        }
+    })
 </script>
 
 <template>
@@ -7,9 +12,9 @@
         <div class="container">
             <div class="header-logo-section">
                 <div class="buyit-logo">
-                    <img src="..//assets/logo.jpg" alt="buyit-logo" class="buyit-logo-icon">
+                    <router-link to="/"><img src="..//assets/logo.jpg" alt="buyit-logo" class="buyit-logo-icon"></router-link>
                 </div>
-                <h1 class="header-title">Đăng nhập</h1>
+                <h1 class="header-title">{{ title }}</h1>
             </div>
             <div class="customer-support">
                 <a href="/" class="support-link">Bạn cần giúp đỡ?</a>

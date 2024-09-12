@@ -1,25 +1,12 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 // import MainHeader from './components/MainHeader.vue';
-import MainFooter from './components/MainFooter.vue';
-import AuthHeader from './components/AuthHeader.vue';
+// import MainFooter from './components/MainFooter.vue';
+// import AuthHeader from './components/AuthHeader.vue';
 </script>
 
 <template>
-  <!-- <MainHeader /> -->
-   <AuthHeader/>
-  <div>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/login">Log in</RouterLink>
-      </nav>
-    </div>
-  </div>
-
   <RouterView />
-  <MainFooter />
 </template>
 
 <style scoped>

@@ -38,7 +38,7 @@
                         <span id="line">|</span>
                     </li>
                     <li class="navbar__item ">
-                        <router-link to="/" class="navbar__item-link link-hover">Đăng ký</router-link>
+                        <router-link to="/signup" class="navbar__item-link link-hover">Đăng ký</router-link>
                     </li>
                     <li class="navbar__item">
                         <span id="line">|</span>
