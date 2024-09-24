@@ -33,22 +33,22 @@
                     <div class="row">
                         <h5>Thanh Toán</h5>
                         <div class="row payment-methods">
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="../assets/paymentunit/americanexpress.png" alt="americanexpress" class="payment-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="../assets/paymentunit/mastercard.png" alt="mastercard" class="payment-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="../assets/paymentunit/visa.png" alt="visa"  class="payment-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="../assets/paymentunit/cod.png" alt="cod" class="payment-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="../assets/paymentunit/jcb.png" alt="jcb" class="payment-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="../assets/paymentunit/tragop.png" alt="tragop" class="payment-img">
                             </div>
                         </div>
@@ -56,34 +56,34 @@
                     <div class="row">
                         <h5>Đơn vị vận chuyển</h5>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/ahamove.png" alt="ahamove" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/be.png" alt="be" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/bestexpress.png" alt="bestexpress" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/ghn.png" alt="ghn" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/ghtk.png" alt="ghtk" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/grabexpress.png" alt="grabexpress" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/j&t.png" alt="j&t" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/ninjavan.png" alt="ninjavan" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/vnpost.png" alt="vnpost" class="shipping-unit-img">
                             </div>
-                            <div class="col-3">
+                            <div class="col col-sm-6 col-md-5 col-lg-4 col-xl-3">
                                 <img src="..//assets/shippingunit/vtpost.png" alt="vtpost" class="shipping-unit-img">
                             </div>
                         </div>
@@ -106,7 +106,7 @@
         background-color: var(--vt-c-text-dark-2);
         padding-bottom: 50px;
         padding-top: 50px;
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
     .payment-img,
     .shipping-unit-img {
