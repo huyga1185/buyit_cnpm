@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Trang-1" id="SkYUdIGgRq7ebbWW-lhZ">
-    <mxGraphModel dx="5093" dy="5646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="4535" dy="5227" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -120,7 +120,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-54" value="Active/Deactive-User-or-Seller" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="750" y="80" width="125" height="50" as="geometry" />
+          <mxGeometry x="780" y="90" width="125" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-55" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-18" target="eCP-VrvmO7TKHuiMxvTa-54" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -129,7 +129,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-56" value="Chat" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="390" y="-80" width="102" height="50" as="geometry" />
+          <mxGeometry x="408" y="-80" width="102" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-58" value="Sort-Product-by-Category" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="220" width="90" height="40" as="geometry" />
@@ -207,7 +207,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-76" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.004;entryY=0.672;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-54" target="eCP-VrvmO7TKHuiMxvTa-73" edge="1">
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-76" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-54" target="eCP-VrvmO7TKHuiMxvTa-73" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="195" y="320" as="sourcePoint" />
             <mxPoint x="199" y="272" as="targetPoint" />
@@ -301,7 +301,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-102" value="Choose-Logicstic-Service" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="475" width="130" height="80" as="geometry" />
+          <mxGeometry x="430" y="480" width="130" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-103" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-102" target="eCP-VrvmO7TKHuiMxvTa-97" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -325,7 +325,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-108" value="Support" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="387" y="145" width="125" height="50" as="geometry" />
+          <mxGeometry x="379" y="130" width="125" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-109" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-18" target="eCP-VrvmO7TKHuiMxvTa-108" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -374,7 +374,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-122" value="Schedule-time-to-pick-product" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="544" y="360" width="136.5" height="60" as="geometry" />
+          <mxGeometry x="516.75" y="390" width="136.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-123" value="Allow-Shopping-Request" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="280" width="130" height="45" as="geometry" />
@@ -392,7 +392,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-126" value="Get-time-to-pick-product" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="735" y="480" width="140" height="70" as="geometry" />
+          <mxGeometry x="730" y="500" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-128" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-24" target="eCP-VrvmO7TKHuiMxvTa-126" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -407,7 +407,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-130" value="Make-track-shipping" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="730" y="585" width="135" height="50" as="geometry" />
+          <mxGeometry x="737.5" y="710" width="135" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-131" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-24" target="eCP-VrvmO7TKHuiMxvTa-130" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
