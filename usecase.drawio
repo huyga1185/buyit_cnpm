@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Trang-1" id="SkYUdIGgRq7ebbWW-lhZ">
-    <mxGraphModel dx="4535" dy="5227" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="4522" dy="5309" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,13 +25,13 @@
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-15" value="Show-Products" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="460" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-18" value="Administrator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-18" value="Administrator API" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="1020" y="187.5" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-22" value="Payment service" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-22" value="Payment service API" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="1020" y="380" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-24" value="Logicstic service" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-24" value="Logicstic service API" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="1020" y="530" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-30" value="Signup" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -286,7 +286,7 @@
           <mxGeometry x="230" y="460" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-97" value="Enter-payment-methods &amp;amp; Checkout" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="620" width="130" height="80" as="geometry" />
+          <mxGeometry x="470" y="510" width="130" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-100" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-68" target="eCP-VrvmO7TKHuiMxvTa-96" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -294,19 +294,10 @@
             <mxPoint x="199" y="272" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-101" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-96" target="eCP-VrvmO7TKHuiMxvTa-102" edge="1">
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-101" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-96" target="eCP-VrvmO7TKHuiMxvTa-97" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="620" y="165" as="sourcePoint" />
-            <mxPoint x="441" y="140" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-102" value="Choose-Logicstic-Service" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="430" y="480" width="130" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-103" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-102" target="eCP-VrvmO7TKHuiMxvTa-97" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="360" y="460" as="sourcePoint" />
-            <mxPoint x="468" y="427" as="targetPoint" />
+            <mxPoint x="430" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-104" value="Verify-Payment" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -361,53 +352,14 @@
             <mxPoint x="630" y="-160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-114" value="Show-Shopping-Request" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="516.75" y="195" width="130" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-115" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.595;entryY=0.08;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-6" target="eCP-VrvmO7TKHuiMxvTa-114" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="790" y="-10" as="sourcePoint" />
-            <mxPoint x="479" y="142" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="790" y="60" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-122" value="Schedule-time-to-pick-product" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="516.75" y="390" width="136.5" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-123" value="Allow-Shopping-Request" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="280" width="130" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-124" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-114" target="eCP-VrvmO7TKHuiMxvTa-123" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="710" y="465" as="sourcePoint" />
-            <mxPoint x="577" y="552" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-125" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.785;exitY=0.936;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-123" target="eCP-VrvmO7TKHuiMxvTa-122" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="165" y="470" as="sourcePoint" />
-            <mxPoint x="199" y="272" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-126" value="Get-time-to-pick-product" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="730" y="500" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-128" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-24" target="eCP-VrvmO7TKHuiMxvTa-126" edge="1">
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-128" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-24" target="yUG__G-NnpQ9U3A9nIch-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1030" y="410" as="sourcePoint" />
-            <mxPoint x="850" y="445" as="targetPoint" />
+            <mxPoint x="870" y="535" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-129" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.753;entryY=0.948;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-126" target="eCP-VrvmO7TKHuiMxvTa-122" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="740" y="445" as="sourcePoint" />
-            <mxPoint x="577" y="552" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eCP-VrvmO7TKHuiMxvTa-130" value="Make-track-shipping" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="737.5" y="710" width="135" height="50" as="geometry" />
+        <mxCell id="eCP-VrvmO7TKHuiMxvTa-130" value="Create-track-shipping" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="650" width="135" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eCP-VrvmO7TKHuiMxvTa-131" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="eCP-VrvmO7TKHuiMxvTa-24" target="eCP-VrvmO7TKHuiMxvTa-130" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -423,6 +375,9 @@
             <mxPoint x="1030" y="-20" as="sourcePoint" />
             <mxPoint x="750" y="-287" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="yUG__G-NnpQ9U3A9nIch-1" value="Create-time-pick-product" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="505" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
