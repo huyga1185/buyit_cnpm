@@ -26,7 +26,7 @@
                     </li>
                 </ul>
 
-                <ul class="navbar__list login-signup-section col-2-3">
+                <ul class="navbar__list login-signup-section col-3">
                     <li class="navbar__item notification_section">
                         <span class="navbar__item-link"><IconBell class="navbar__item-icon"/>Thông báo</span>
                         <div class="notification_popup">

@@ -7,6 +7,14 @@
 
 <template>
   <MainHeader/>
-  <MainHome/>
+  <div class="main">
+    <MainHome/>
+  </div>
   <MainFooter/>
 </template>
+
+<style>
+  /* .main {
+    background-color: var(--vt-c-text-dark-3);
+  } */
+</style>

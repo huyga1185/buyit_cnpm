@@ -1,24 +1,76 @@
 <script setup>
     import products from "@/assets/jsondemo/demoProducts.json"
     import categories from "@/assets/jsondemo/demoCategory.json"
+    import carouselImages from "@/assets/jsondemo/demoCarousel.json";
     import IconAngleLeft from "./icons/IconAngleLeft.vue";
     import IconAngleRight from "./icons/IconAngleRight.vue";
+    const carousels = carouselImages.carouselImages;
     const producta = products.product;
     const categorya = categories.category;
+
+    import { ref } from 'vue';
+
+// Tạo tham chiếu đến phần tử DOM
+    const categoryContainer = ref(null);
+
+    // Hàm để scroll
+    const scrollLeft = () => {
+        categoryContainer.value.scrollLeft -= 400; // Trượt về bên trái
+    };
+
+    const scrollRight = () => {
+        categoryContainer.value.scrollLeft += 400; // Trượt về bên phải
+    };
+
 </script>
 
 <template>
-    <div class="category__section">
+    <div class="banner__section">
         <div class="container">
-            <div class="category__wrapper row">
-                <div class="category__header col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <section class="banner__carousel row">
+                <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" 
+                                data-bs-target="#carouselIndicators" 
+                                v-for="(item, index) in carousels" 
+                                :key="index" 
+                                :data-bs-slide-to="index" 
+                                :class="{ active: index === 0 }" 
+                                :aria-label="'Slide ' + (index + 1)" 
+                                :aria-current="index === 0 ? 'true' : null">
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div v-for="(carousel, index) in carousels" 
+                            :key="index" 
+                            :class="{active: index === 0, 'carousel-item': true}">
+                            <img :src="carousel['image_url']" :alt="carousel['alt']" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="category__section main">
+        <div class="container">
+            <div class="category__wrapper row align-items-center">
+                <div class="category__header col-12">
                     <label>Danh mục</label>
                 </div>
-                <button class="category__button-turn-left">
+                <button class="category__button-turn-left" @click="scrollLeft">
                         <icon-angle-left class="button__icon"/>
                 </button>
-                <div class="category">
-                    <div v-for="(category, index) in categorya" :key="index" class="category__item col">
+                <div ref="categoryContainer" class="category">
+                    <div v-for="(category, index) in categorya" 
+                        :key="index" 
+                        class="category__item col">
                         <router-link to="/" class="category__item-link">
                             <img :src="category['category_img']" alt="" class="category__item-img">
                             <div class="category__item-content">
@@ -27,7 +79,7 @@
                         </router-link>
                     </div>
                 </div>
-                <button class="category__button-turn-right">
+                <button class="category__button-turn-right" @click="scrollRight">   
                         <icon-angle-right class="button__icon"/>
                 </button>
             </div>
@@ -57,6 +109,26 @@
     .col-2 {
         padding: 5px;
     }
+
+    .banner__section {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        background-color: var(--vt-c-text-dark-2); /* Màu đen cho dấu chấm */
+        border-radius: 50%; /* Tạo hình tròn */
+        margin: 0 5px; /* Khoảng cách giữa các dấu chấm */
+        opacity: 0.8    ; /* Độ trong suốt mặc định */
+    }   
+
+    .carousel-indicators .active {
+        background-color: var(--brand-color); /* Màu xanh cho dấu chấm active */
+        opacity: 1; /* Hiển thị đầy đủ */
+    }
+
     .main__items {
         padding-bottom: calc(var(--bs-gutter-x) * .5);
         padding-top: calc(var(--bs-gutter-x) * .5);
@@ -102,7 +174,7 @@
         box-orient: vertical;   /* Hỗ trợ cho các trình duyệt tuân theo chuẩn */
         margin-bottom: 8px;
     }
-    .main__item-price {
+    .main__item-price { 
         font-size: 1.6rem;
         line-height: 1.6rem;
         color: var(--brand-color);
@@ -115,9 +187,11 @@
         grid-auto-columns: 10.15rem;
         padding: 0;
         scrollbar-width: none;
+        scroll-behavior: smooth;
     }
     .category__wrapper {
         position: relative;
+        background-color: var(--vt-c-white);
     }
     .category__wrapper::before {
         position: absolute;
@@ -193,6 +267,7 @@
         color: var(--vt-c-black);
     }
     .category__section {
+        padding-top: 15px;
         padding-bottom: 25px;
     }
     .category__header {
