@@ -82,6 +82,7 @@
     .wrapper {
         display: flex;
         flex-direction: column;
+        /* margin-bottom: 20px; */
     }
     .navbar {
         background-image: linear-gradient(0, rgb(235, 76, 147), var(--brand-color));
@@ -114,21 +115,44 @@
     .right-section__notification {
         position: relative;
     }
+    .right-section__notification:hover .notification__popup {
+        display: flex;
+    }
     .right-section__notification::before {
+        content: " ";
+        position: absolute;
+        width: 80px;
+        height: 20px;
+        background-color: transparent;
+        top: 104%;
+    }
+    .notification__popup::before {
+        content: " ";
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 15px solid var(--vt-c-white);
+        /* box-shadow: 2px 3px 2px var(--vt-c-text-dark-3); */
+        top: -4%;
+        right: 5%;
+        border-radius: 2px;
+        z-index: 1002;
+    }
+    .notification__popup::after {
         content: " ";
         position: absolute;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-bottom: 15px solid var(--vt-c-text-dark-3);
         /* box-shadow: 2px 3px 2px var(--vt-c-text-dark-3); */
-        top: 120%;
-        right: 30%;
+        top: -4%;
+        right: 5%;
         border-radius: 2px;
-        z-index: 1002;
+        z-index: 1001;
     }
     .notification__popup {
-        /* display: none; */
-        display: flex;
+        display: none;
+        /* display: flex; */
         position: absolute;
         top: 180%;
         right: 10%;
